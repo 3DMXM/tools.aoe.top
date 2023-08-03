@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+
 export default defineNuxtConfig({
     css: [
         'vuetify/styles',
@@ -10,7 +12,7 @@ export default defineNuxtConfig({
     build: {
         transpile: ['vuetify'],
     },
-    ssr: false,
+    ssr: process.env.NODE_ENV != 'development',
     modules: [
         'nuxt-og-image',
         "nuxt-gtag",

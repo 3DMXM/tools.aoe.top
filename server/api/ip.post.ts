@@ -1,4 +1,4 @@
-import { Ip } from '@/model/ip'
+import { Ip } from '@/model/Ip'
 
 export default defineEventHandler(async (event) => {
 

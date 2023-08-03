@@ -4,12 +4,13 @@ export default defineNuxtConfig({
         'vuetify/styles',
         '@mdi/font/css/materialdesignicons.css',
         'assets/main.less',
-        'element-plus/theme-chalk/dark/css-vars.css'
+        'assets/nprogress.css',
+        'element-plus/theme-chalk/dark/css-vars.css',
     ],
     build: {
         transpile: ['vuetify'],
     },
-    ssr: true,
+    ssr: false,
     modules: [
         'nuxt-og-image',
         "nuxt-gtag",

@@ -20,7 +20,8 @@ const main = useMain()
                 <v-icon size="small" icon="mdi-home"></v-icon>
             </template>
         </v-breadcrumbs>
-        <NuxtPage />
+        <!-- <NuxtPage /> -->
+        <router-view></router-view>
         <v-card title="其他工具" class="other">
             <v-card-text>
                 <ToolsList></ToolsList>

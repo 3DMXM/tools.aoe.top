@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
+    "@nuxt-alt/proxy": "^2.3.0",
     "@pinia/nuxt": "^0.4.11",
     "github-markdown-css": "^5.2.0",
     "ip": "^1.1.8",
@@ -27,6 +28,7 @@
     "nuxt-gtag": "^0.5.7",
     "nuxt-og-image": "^2.0.13",
     "pinia": "^2.1.6",
+    "request": "^2.88.2",
     "vuetify": "^3.3.11"
   }
 }

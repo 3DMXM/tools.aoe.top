@@ -7,14 +7,20 @@ export const useMain = defineStore('main', {
                 title: '密码生成器',
                 desc: '随机生成密码，可自定义密码长度、密码组成、密码个数',
                 icon: 'mdi-lock',
-                to: '/tools/password'
+                to: '/tools/password',
             },
             {
                 title: 'IP查询',
                 desc: '查询我的IP地址、地理位置、运营商等信息',
                 icon: 'mdi-web',
                 to: '/tools/ip'
-            }
+            },
+            // {
+            //     title: 'MD5加密',
+            //     desc: 'MD5加密、解密，支持多种编码',
+            //     icon: 'mdi-lock',
+            //     to: '/tools/md5'
+            // }
         ]
     }),
 

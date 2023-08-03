@@ -9,11 +9,12 @@ export default defineNuxtConfig({
     build: {
         transpile: ['vuetify'],
     },
-    ssr: false,
+    ssr: true,
     modules: [
         'nuxt-og-image',
         "nuxt-gtag",
         '@element-plus/nuxt',
+        '@nuxt-alt/proxy',
         [
             '@pinia/nuxt',
             {
@@ -42,5 +43,14 @@ export default defineNuxtConfig({
     },
     gtag: {
         id: 'G-L04H04RSS7'
-    }
+    },
+    proxy: {
+        proxies: {
+            '/api_ip': {
+                target: 'https://api.ip.sb/geoip',
+                changeOrigin: true,
+                rewrite: (path: any) => path.replace(/^\/api_ip/, '')
+            },
+        }
+    },
 })

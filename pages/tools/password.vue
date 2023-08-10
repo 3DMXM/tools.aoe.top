@@ -73,11 +73,7 @@ function generate() {
         <v-col cols="12" class="result">
             <tools-passwords v-for="item in passwords" :key="item" :password="item"></tools-passwords>
         </v-col>
-        <v-col cols="12" class="describe">
-            <v-expansion-panels>
-                <v-expansion-panel title="介绍" open>
-                    <v-expansion-panel-text>
-                        <Markdown :text="`### 功能介绍
+        <ToolsDescribe :text="`### 功能介绍
 “密码生成器”是一款专业的密码生成工具, 可以帮助用户快速生成复杂、安全的密码。只需点击一下, 您就能得到一个随机生成的密码。该工具具有以下特点：
 1. 随机生成：密码由数字、大小写字母以及特殊字符随机组合而成, 确保密码的复杂度和独特性。
 2. 可自定义长度：用户可根据需求自行选择生成密码的长度, 既满足各类应用场景的要求, 又确保密码的安全性。
@@ -95,11 +91,8 @@ function generate() {
 3. 使用密码管理工具保存生成的密码, 避免忘记或遗失。
 
  “密码生成器”绝对是您在日常生活中不可或缺的密码管理好帮手。它能够快速、高效地为您生成复杂且安全的密码, 保护您的个人信息和账户安全。现在就试试这款神奇的工具吧！让密码安全不再成为您的烦恼！`">
-                        </Markdown>
-                    </v-expansion-panel-text>
-                </v-expansion-panel>
-            </v-expansion-panels>
-        </v-col>
+        </ToolsDescribe>
+
     </v-row>
 </template>
 <script lang='ts'>

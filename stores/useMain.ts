@@ -15,12 +15,12 @@ export const useMain = defineStore('main', {
                 icon: 'mdi-web',
                 to: '/tools/ip'
             },
-            // {
-            //     title: 'MD5加密',
-            //     desc: 'MD5加密、解密，支持多种编码',
-            //     icon: 'mdi-lock',
-            //     to: '/tools/md5'
-            // }
+            {
+                title: 'MD5加密',
+                desc: 'MD5加密、解密, 支持多种编码',
+                icon: 'mdi-lock',
+                to: '/tools/md5'
+            }
         ]
     }),
 

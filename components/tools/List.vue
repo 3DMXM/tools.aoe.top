@@ -30,8 +30,9 @@ export default {
     flex-wrap: wrap;
 
     .list {
-        width: 300px;
+        min-width: 300px;
         margin: 10px;
+        flex: 1 1 auto;
     }
 }
 </style>

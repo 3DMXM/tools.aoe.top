@@ -11,6 +11,7 @@
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.5",
     "@types/ip": "^1.1.0",
+    "@types/md5": "^2.3.2",
     "@types/node": "^18.17.1",
     "@types/nprogress": "^0.2.0",
     "element-plus": "^2.3.8",
@@ -25,6 +26,7 @@
     "github-markdown-css": "^5.2.0",
     "ip": "^1.1.8",
     "marked": "^6.0.0",
+    "md5": "^2.3.0",
     "nprogress": "^0.2.0",
     "nuxt-gtag": "^0.5.7",
     "nuxt-og-image": "^2.0.13",

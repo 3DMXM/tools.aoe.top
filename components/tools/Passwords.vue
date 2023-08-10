@@ -1,8 +1,8 @@
 <script lang='ts' setup>
 
-const props = defineProps({
-    password: String
-})
+const props = defineProps<{
+    password: string
+}>()
 
 function copy() {
     navigator.clipboard.writeText(props.password)
@@ -23,15 +23,20 @@ function copy() {
 <script lang='ts'>
 
 export default {
-    name: 'Passwords',
+    name: 'ToolsPasswords',
 }
 </script>
 <style lang='less' scoped>
 .list {
     display: flex;
+    align-items: center;
 
     .text {
         flex: 1 1 auto;
+        // 溢出隐藏
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 </style>
